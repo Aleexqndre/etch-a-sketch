@@ -8,4 +8,19 @@ for(i = 0; i < 16 * 16; i++){
 
 }
 
+const squares = document.querySelectorAll('.square');
 
+squares.forEach(function(square) {
+    square.addEventListener('mouseenter', function() {
+        square.classList.add('squareHover');
+    });
+});
+
+const reset = document.getElementById(`reset`)
+
+
+reset.addEventListener('click', function(){
+    squares.forEach(function(square) {
+        square.classList.remove('squareHover');
+    });
+});
