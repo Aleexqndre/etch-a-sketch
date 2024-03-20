@@ -2,14 +2,11 @@
     display : flex;
     flex-flow: wrap;
     border: 1px black;
-    height: 32rem;
-    width: 32rem;
+    width: 960px; 
 }
 
 .square{
     background-color: black;
-    height: 2rem;
-    width: 2rem;
     border: 1px solid white;
     box-sizing: border-box;
 }

@@ -6,9 +6,18 @@ let squares;
 // Créer une grille avec un côté donné
 function createGrid(side) {
     container.innerHTML = ``;
+
+    // Taille fixe de chaque carré en pixels
+    const squareSize = 960/side; // par exemple
+
     for (let i = 0; i < side * side; i++) {
         const square = document.createElement(`div`);
         square.classList.add(`square`);
+        
+        // Définir la largeur et la hauteur de chaque carré
+        square.style.width = `${squareSize}px`;
+        square.style.height = `${squareSize}px`;
+
         container.appendChild(square);
     }
 }
